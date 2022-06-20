@@ -1,0 +1,12 @@
+C:\Users\מירי\source\repos\Calculator\Calculator\bin\Debug\net6.0\MyCalculator.deps.json
+C:\Users\מירי\source\repos\Calculator\Calculator\bin\Debug\net6.0\MyCalculator.dll
+C:\Users\מירי\source\repos\Calculator\Calculator\bin\Debug\net6.0\ref\MyCalculator.dll
+C:\Users\מירי\source\repos\Calculator\Calculator\bin\Debug\net6.0\MyCalculator.pdb
+C:\Users\מירי\source\repos\Calculator\Calculator\obj\Debug\net6.0\MyCalculator.csproj.AssemblyReference.cache
+C:\Users\מירי\source\repos\Calculator\Calculator\obj\Debug\net6.0\MyCalculator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\מירי\source\repos\Calculator\Calculator\obj\Debug\net6.0\MyCalculator.AssemblyInfoInputs.cache
+C:\Users\מירי\source\repos\Calculator\Calculator\obj\Debug\net6.0\MyCalculator.AssemblyInfo.cs
+C:\Users\מירי\source\repos\Calculator\Calculator\obj\Debug\net6.0\MyCalculator.csproj.CoreCompileInputs.cache
+C:\Users\מירי\source\repos\Calculator\Calculator\obj\Debug\net6.0\MyCalculator.dll
+C:\Users\מירי\source\repos\Calculator\Calculator\obj\Debug\net6.0\ref\MyCalculator.dll
+C:\Users\מירי\source\repos\Calculator\Calculator\obj\Debug\net6.0\MyCalculator.pdb
