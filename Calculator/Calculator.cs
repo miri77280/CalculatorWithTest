@@ -1,6 +1,6 @@
 ﻿namespace MyCalculator
 {
-    public class Calculator : ICalculator 
+    public class Calculator : ICalculator
     {
         private double result = 0;
        
@@ -20,12 +20,13 @@
         {
             result = 0;
         }
+
         public double Add(double num)
         {
             return result += num;
         }
 
-        public double sustract(double num)
+        public double Substract(double num)
         {
             return result -= num;
         }
@@ -40,16 +41,17 @@
             return result *= num;
         }
 
-        public void SaveData()
-        {
-            this.dataSaver.SaveData(result.ToString());
-        }
-
         public string RestoreData()
         {
             return this.dataSaver.RestoreData();
         }
 
-           
+        public void SaveData(string data = null)
+        {
+            if (data == null)
+                ZeroValue();
+
+            this.dataSaver.SaveData(result.ToString());
+        }
     }
 }

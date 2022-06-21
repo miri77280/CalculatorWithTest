@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "1R6lzm50ux8l1Bsi+XHBMXBC3ZwSslIBX1r3Q9EnofCJJJKAzQb6XM6FI4OKDxAq2CxMfa3K85qTOxOCP8h0Xg==",
+  "dgSpecHash": "8TKK+TzRaru4eNyfVcVkM94Vrhvm31MPrWYrr7BZlaftUVo5K2cb2ZMjoljcJYDOTqfZ6Gfwqlq9tccve6S96w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\מירי\\source\\repos\\Calculator\\Calculator\\MyCalculator.csproj",
+  "projectFilePath": "C:\\Users\\I353727\\OneDrive - SAP SE\\SUBJECTS\\2020.01.07 CDP\\2022.05.18 Interview Miri\\CalculatorWithTest\\Calculator\\MyCalculator.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\מירי\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+    "C:\\Users\\I353727\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
   ],
   "logs": []
 }

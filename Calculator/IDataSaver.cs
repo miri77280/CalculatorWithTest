@@ -10,6 +10,5 @@ namespace MyCalculator
     {
         void SaveData(string data);
         string RestoreData();
-                   
     }
 }

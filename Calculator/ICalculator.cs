@@ -6,15 +6,13 @@ using System.Threading.Tasks;
 
 namespace MyCalculator
 {
-    public interface ICalculator
+    public interface ICalculator : IDataSaver
     {
         double Add(double num);
-        double sustract(double num);
+        double Substract(double num);
         Double Multiply(double num);
         double Divide(double num);
         double GetValue();
         void ZeroValue();
-
-
     }
 }
