@@ -14,6 +14,7 @@
           "NUnit": "3.13.2",
           "NUnit.Console": "3.15.0",
           "NUnit3TestAdapter": "4.0.0",
+          "Ninject": "3.3.6",
           "coverlet.collector": "3.1.0"
         },
         "runtime": {
@@ -314,6 +315,18 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {
             "assemblyVersion": "13.0.0.0",
             "fileVersion": "13.0.1.25517"
+          }
+        }
+      },
+      "Ninject/3.3.6": {
+        "dependencies": {
+          "System.Reflection.Emit.ILGeneration": "4.3.0",
+          "System.Reflection.Emit.Lightweight": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Ninject.dll": {
+            "assemblyVersion": "3.3.6.0",
+            "fileVersion": "3.3.6.0"
           }
         }
       },
@@ -718,7 +731,8 @@
       },
       "MyCalculator/1.0.0": {
         "dependencies": {
-          "Newtonsoft.Json": "13.0.1"
+          "Newtonsoft.Json": "13.0.1",
+          "Ninject": "3.3.6"
         },
         "runtime": {
           "MyCalculator.dll": {}
@@ -801,6 +815,13 @@
       "sha512": "sha512-ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A==",
       "path": "newtonsoft.json/13.0.1",
       "hashPath": "newtonsoft.json.13.0.1.nupkg.sha512"
+    },
+    "Ninject/3.3.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-93avazUpbRL3IdwvTQF0DKSQB26TeqwMGhZsQNxi/RLSYewhxBkdGDhwWe9DAIRF1+zKDVMv3XkBk8HobKU6wA==",
+      "path": "ninject/3.3.6",
+      "hashPath": "ninject.3.3.6.nupkg.sha512"
     },
     "NSubstitute/4.3.0": {
       "type": "package",

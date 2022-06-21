@@ -57,12 +57,9 @@
             return this.dataSaver.RestoreData();
         }
 
-        public void SaveData(string data = null)
+        public void SaveData(string data="")
         {
-            if (data == null)
-                ZeroValue();
-
-            this.dataSaver.SaveData(result.ToString());
+           this.dataSaver.SaveData(result.ToString());
         }
     }
 }

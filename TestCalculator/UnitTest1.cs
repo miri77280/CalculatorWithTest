@@ -3,21 +3,14 @@ using NUnit.Framework;
 using NSubstitute;
 using System.Collections.Generic;
 using System.Linq;
+using Ninject;
 
 namespace TestCalculator
 {
     [TestFixture]
     public class Tests
     {
-        // Running one time
-        // [OneTimeSetUp]
-
-        // Running before every test
-        [SetUp]
-        public void Setup()
-        {
-            _calculator.ZeroValue();
-        }
+       
 
         private ICalculator _calculator;
         private List<CalculationResult> _dataList;
@@ -28,8 +21,30 @@ namespace TestCalculator
         {
             // Use underscore for private members
             _dataList = new List<CalculationResult>();
-            _dataSaver = Substitute.For<IDataSaver>();
+           // _dataSaver = Substitute.For<IDataSaver>();
+           // _calculator = new Calculator(_dataSaver);
+        }
+
+        // Running one time
+        [OneTimeSetUp]
+        public void OneTimeSetUp()
+        {
+            //Bind<IDataSaver>().To<FileDataSaver>();
+            //  bindings.Rebind<IDataSaver>().To<Substitute.For<IDataSaver>()>().InRequestScope();
+
+            var kernel = new StandardKernel();
+            // Set up kernel
+            var substitute = Substitute.For<IDataSaver>();
+            kernel.Rebind<IDataSaver>().ToConstant(substitute);
+            _dataSaver = kernel.Get<IDataSaver>();
             _calculator = new Calculator(_dataSaver);
+        }
+
+        // Running before every test
+        [SetUp]
+        public void Setup()
+        {
+            _calculator.ZeroValue();
         }
 
         [Test, Order(1)]
@@ -79,7 +94,7 @@ namespace TestCalculator
                 _dataList.Add(calculationResult);
             });
 
-            _dataSaver.SaveData(currentValue);
+            _calculator.SaveData(currentValue);
             lastValueStored = currentValue;
             Assert.That(_dataList.Any(p => p.Result == currentValue));
         }
@@ -96,9 +111,7 @@ namespace TestCalculator
             // Arrange
             lastValueStored = "1234";
             _dataSaver.RestoreData().Returns(lastValueStored);
-            var res = _dataSaver.RestoreData();
-
-            // TODO:
+              // TODO:
             // Test, that passing mock to Calculator
             // Asing calucalator to "load data"
             // and assert on loaded data
@@ -118,7 +131,7 @@ namespace TestCalculator
             calculatorReal.Add(50);
             calculatorReal.SaveData();
 
-            Assert.That("50", Is.Not.EqualTo(calculatorReal.RestoreData()));
+            Assert.That("50", Is.EqualTo(calculatorReal.RestoreData()));
         }
     }
 }

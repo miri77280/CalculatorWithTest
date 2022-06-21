@@ -350,6 +350,19 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
+      "Ninject/3.3.6": {
+        "type": "package",
+        "dependencies": {
+          "System.Reflection.Emit.ILGeneration": "4.3.0",
+          "System.Reflection.Emit.Lightweight": "4.3.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Ninject.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Ninject.dll": {}
+        }
+      },
       "NSubstitute/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -783,7 +796,7 @@
           "System.Runtime": "4.3.0"
         },
         "compile": {
-          "ref/netstandard1.0/_._": {}
+          "ref/netstandard1.0/System.Reflection.Emit.Lightweight.dll": {}
         },
         "runtime": {
           "lib/netstandard1.3/System.Reflection.Emit.Lightweight.dll": {}
@@ -1017,7 +1030,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "Newtonsoft.Json": "13.0.1"
+          "Newtonsoft.Json": "13.0.1",
+          "Ninject": "3.3.6"
         },
         "compile": {
           "bin/placeholder/MyCalculator.dll": {}
@@ -1856,6 +1870,21 @@
         "newtonsoft.json.13.0.1.nupkg.sha512",
         "newtonsoft.json.nuspec",
         "packageIcon.png"
+      ]
+    },
+    "Ninject/3.3.6": {
+      "sha512": "93avazUpbRL3IdwvTQF0DKSQB26TeqwMGhZsQNxi/RLSYewhxBkdGDhwWe9DAIRF1+zKDVMv3XkBk8HobKU6wA==",
+      "type": "package",
+      "path": "ninject/3.3.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Ninject.dll",
+        "lib/net45/Ninject.xml",
+        "lib/netstandard2.0/Ninject.dll",
+        "lib/netstandard2.0/Ninject.xml",
+        "ninject.3.3.6.nupkg.sha512",
+        "ninject.nuspec"
       ]
     },
     "NSubstitute/4.3.0": {
@@ -4349,28 +4378,24 @@
       "NUnit >= 3.13.2",
       "NUnit.Console >= 3.15.0",
       "NUnit3TestAdapter >= 4.0.0",
+      "Ninject >= 3.3.6",
       "coverlet.collector >= 3.1.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\I353727\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\מירי\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\I353727\\OneDrive - SAP SE\\SUBJECTS\\2020.01.07 CDP\\2022.05.18 Interview Miri\\CalculatorWithTest\\TestCalculator\\TestCalculator.csproj",
+      "projectUniqueName": "C:\\Users\\מירי\\source\\repos\\Calculator\\TestCalculator\\TestCalculator.csproj",
       "projectName": "TestCalculator",
-      "projectPath": "C:\\Users\\I353727\\OneDrive - SAP SE\\SUBJECTS\\2020.01.07 CDP\\2022.05.18 Interview Miri\\CalculatorWithTest\\TestCalculator\\TestCalculator.csproj",
-      "packagesPath": "C:\\Users\\I353727\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\I353727\\OneDrive - SAP SE\\SUBJECTS\\2020.01.07 CDP\\2022.05.18 Interview Miri\\CalculatorWithTest\\TestCalculator\\obj\\",
+      "projectPath": "C:\\Users\\מירי\\source\\repos\\Calculator\\TestCalculator\\TestCalculator.csproj",
+      "packagesPath": "C:\\Users\\מירי\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\מירי\\source\\repos\\Calculator\\TestCalculator\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\I353727\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\מירי\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4378,16 +4403,14 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "c:\\deleteme\\bbbb\\": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://baget.gigya.net/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\I353727\\OneDrive - SAP SE\\SUBJECTS\\2020.01.07 CDP\\2022.05.18 Interview Miri\\CalculatorWithTest\\Calculator\\MyCalculator.csproj": {
-              "projectPath": "C:\\Users\\I353727\\OneDrive - SAP SE\\SUBJECTS\\2020.01.07 CDP\\2022.05.18 Interview Miri\\CalculatorWithTest\\Calculator\\MyCalculator.csproj"
+            "C:\\Users\\מירי\\source\\repos\\Calculator\\Calculator\\MyCalculator.csproj": {
+              "projectPath": "C:\\Users\\מירי\\source\\repos\\Calculator\\Calculator\\MyCalculator.csproj"
             }
           }
         }
@@ -4422,6 +4445,10 @@
             "target": "Package",
             "version": "[4.0.0, )"
           },
+          "Ninject": {
+            "target": "Package",
+            "version": "[3.3.6, )"
+          },
           "coverlet.collector": {
             "target": "Package",
             "version": "[3.1.0, )"
@@ -4442,7 +4469,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }
