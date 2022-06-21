@@ -1,5 +1,16 @@
 ﻿namespace MyCalculator
 {
+    //class x : NinjectModul
+    //{
+    //    // registering dependencies
+    //    // bind between interfaces and implmentation
+    //}
+
+    // One time setup -> Rebind ( to mock )
+    // When we asking for calcuator -> with ICalculator
+    // Calculator ? IDataSaver ? -> mock
+
+
     public class Calculator : ICalculator
     {
         private double result = 0;
